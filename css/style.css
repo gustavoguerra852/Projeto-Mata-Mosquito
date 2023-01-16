@@ -1,0 +1,64 @@
+html {
+    cursor: url('../images/mata_mosquito.png'), auto;
+}
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#container {
+    display: flex;
+    justify-content: center;  
+    flex-direction: column;  
+    align-items: center;
+}
+#reiniciar, #comecar {
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+#comecar {
+    background-color: rgb(168, 16, 16);
+    color: white;
+    border: 1px solid white;
+}
+.mosquito{
+    position: absolute;
+}  
+.tamanho1 {
+    width: 50px;
+    height: 50px;
+} 
+.tamanho2 {
+    width: 70px;
+    height: 70px;
+}
+.tamanho3 {
+    width: 90px;
+    height: 90px;
+}
+.flip {
+    transform: scaleX(-1);
+}
+/*---*/
+
+#painel {
+    width: 190px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+}
+
+select {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}

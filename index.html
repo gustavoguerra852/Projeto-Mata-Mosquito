@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mata Mosquito</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <script>
+        function iniciarJogo() {
+            var nivel = document.getElementById('nivel')
+            if (nivel.value == '') {
+                alert('Seleciona um nível para jogar')
+            } else {
+                window.location.href = 'app.html?' + nivel.value
+            }}
+    </script>
+
+    <body>
+        <div id="container">
+            <img src="images/game.png" width="650">
+            <button type="button" onclick="iniciarJogo()" id="comecar">Iniciar Jogo</button>
+            <select id="nivel">
+                <option value="">Selecione um Nível</option>
+                <option value="normal">Normal</option>
+                <option value="dificil">Difícil</option>
+                <option value="impossivel">Impossível</option>
+            </select>
+        </div>
+    </body>
+
+</html>
